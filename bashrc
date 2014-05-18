@@ -1,0 +1,10 @@
+# ----- ALIAS ------
+
+if [ -f ~/.bash_aliases ]; then
+      . ~/.bash_aliases
+fi
+
+# ---- END ALIAS ----
+
+
+
