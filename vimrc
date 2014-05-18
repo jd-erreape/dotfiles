@@ -7,6 +7,10 @@ syntax enable
 set nocompatible
 colorscheme railscasts
 
+" Highlight statusbar of active pane
+hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
+hi StatusLineNC ctermfg=249 guifg=#b2b2b2 ctermbg=237 guibg=#3a3a3a cterm=none gui=none
+
 " CtrlP plugin
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
 map g:ctrlp_map <c-p>
@@ -22,6 +26,15 @@ if version >= 700
     au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 endif
 " -------------- END -------------------
+"##############################################################################                                                                         
+"" Easier split navigation                                                                                                                               
+"##############################################################################                                                                         
+"
+"" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
+nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
+nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
+nmap <silent> <c-l> :wincmd l<CR>
 
 set number	
 set linebreak
