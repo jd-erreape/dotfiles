@@ -1,0 +1,6 @@
+Prerequisites:
+
+* Bash Completion and Git -> brew install git bash-completion
+* OSX do not load .bashrc on login so it´s necessary to add:
+    source .bashrc 
+  to our home .bash_profile file
