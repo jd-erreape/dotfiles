@@ -2,6 +2,8 @@ execute pathogen#infect()
 
 " CtrlP plugin
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
+map g:ctrlp_map <c-p>
+
 
 " Change status bar when changing between modes
 "
