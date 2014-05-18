@@ -1,7 +1,7 @@
 # ----- ALIAS ------
 
-if [ -f ~/.bash_aliases ]; then
-      . ~/.bash_aliases
+if [ -f ~/dotfiles/bash/aliases ]; then
+      . ~/dotfiles/bash/aliases
 fi
 
 # ---- END ALIAS ----
