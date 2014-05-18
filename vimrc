@@ -1,9 +1,15 @@
 execute pathogen#infect()
 
+set t_Co=256
+syntax on
+syntax enable
+
+set nocompatible
+colorscheme railscasts
+
 " CtrlP plugin
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
 map g:ctrlp_map <c-p>
-
 
 " Change status bar when changing between modes
 "
@@ -16,8 +22,6 @@ if version >= 700
     au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 endif
 " -------------- END -------------------
-
-syntax on
 
 set number	
 set linebreak
