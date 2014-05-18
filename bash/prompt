@@ -1,0 +1,9 @@
+# \u -> User
+# \h -> Host
+# \w -> Current path
+# 
+# Colors are defined in dotfiles/bash/colors
+#
+GIT_PS1='$(__git_ps1 "(%s) ")'
+PS1="$Green\u$White@ $Yellow\w $BGreen${GIT_PS1}>$White "
+
