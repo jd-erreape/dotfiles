@@ -8,6 +8,7 @@ set nocompatible
 colorscheme railscasts
 
 set encoding=utf-8
+filetype plugin indent on
 
 " Highlight statusbar of active pane
 hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
@@ -54,6 +55,8 @@ set incsearch
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set tabstop=2
+set tabstop=2
 set smarttab
 set autoindent
  
