@@ -11,6 +11,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
+tempdir=~/tmp                     # temp dir for vim swap files
 files="vimrc vim bashrc gitconfig ackrc"    # list of files/folders to symlink in homedir
 
 ##########
@@ -18,6 +19,11 @@ files="vimrc vim bashrc gitconfig ackrc"    # list of files/folders to symlink i
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
 mkdir -p $olddir
+echo "...done"
+
+# create ~/tmp dir 
+echo "Creating $tempdir for vim swap files" 
+mkdir -p $tempdir
 echo "...done"
 
 # change to the dotfiles directory

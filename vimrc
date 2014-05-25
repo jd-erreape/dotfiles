@@ -64,3 +64,6 @@ set ruler
 
 set undolevels=1000	
 set backspace=indent,eol,start
+
+" Create swap files in ~/tmp dir
+set backupdir=~/tmp
