@@ -1,14 +1,25 @@
-execute pathogen#infect()
-
 set t_Co=256
 syntax on
 syntax enable
 
 set nocompatible
 colorscheme railscasts
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Vundle plugins
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
 
 set encoding=utf-8
 filetype plugin indent on
+
 
 " Highlight statusbar of active pane
 hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
