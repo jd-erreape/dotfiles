@@ -4,6 +4,7 @@ syntax enable
 
 set nocompatible
 colorscheme railscasts
+
 filetype off
 
 " set the runtime path to include Vundle and initialize
