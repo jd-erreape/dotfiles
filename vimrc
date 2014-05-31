@@ -1,10 +1,4 @@
-set t_Co=256
-syntax on
-syntax enable
-
 set nocompatible
-colorscheme railscasts
-
 filetype off
 
 " set the runtime path to include Vundle and initialize
@@ -18,9 +12,17 @@ Bundle 'vim-scripts/ZoomWin'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 
+call vundle#end()          
+filetype plugin indent on 
+
+set t_Co=256
+syntax on
+syntax enable
+
+colorscheme railscasts
+
 set encoding=utf-8
 filetype plugin indent on
-
 
 " Highlight statusbar of active pane
 hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
