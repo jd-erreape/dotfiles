@@ -11,6 +11,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-endwise'
 
 call vundle#end()          
 filetype plugin indent on 
