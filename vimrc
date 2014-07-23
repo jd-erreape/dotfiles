@@ -54,6 +54,36 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
 nmap <silent> <c-l> :wincmd l<CR>
 
+"##############################################################################                                                                         
+"" Toggle relative or absolute line numbers
+"##############################################################################                                                                         
+
+" Enables relative numbers.
+function! EnableRelativeNumbers()
+  set nonumber
+  set relativenumber
+endfunc
+
+" Disables relative numbers.
+function! DisableRelativeNumbers()
+  set number
+  set norelativenumber
+endfunc
+         
+function! NumberToggle()
+  if(&relativenumber == 1)
+    call DisableRelativeNumbers()
+  else
+    call EnableRelativeNumbers()
+  endif
+endfunction
+
+nnoremap <C-n> :call NumberToggle()<cr>
+
+"##############################################################################                                                                         
+"" Base settings
+"##############################################################################                                                                         
+
 set number	
 set linebreak
 set showbreak=+++	
