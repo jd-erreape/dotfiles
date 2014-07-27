@@ -44,6 +44,16 @@ if version >= 700
     au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 endif
 " -------------- END -------------------
+
+" Disable arrow keys
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
+" Tree mode for netrw by default
+let g:netrw_liststyle=3
+
 "##############################################################################                                                                         
 "" Easier split navigation                                                                                                                               
 "##############################################################################                                                                         
