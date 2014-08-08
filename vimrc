@@ -12,6 +12,9 @@ Bundle 'vim-scripts/ZoomWin'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
+" Javascript support
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'kchmck/vim-coffee-script'
 
 call vundle#end()          
 filetype plugin indent on 
