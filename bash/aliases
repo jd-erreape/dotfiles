@@ -24,3 +24,12 @@ alias bi="bundle install"
 alias t="be rspec"
 alias tz="zeus test"
 #alias tz="zeus rspec"
+
+# --- start boot2docker from terminal
+start_docker(){
+  boot2docker start
+  $(boot2docker shellinit)
+}
+stop_docker(){
+  boot2docker stop
+}
