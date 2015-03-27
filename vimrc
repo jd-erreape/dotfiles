@@ -15,6 +15,7 @@ Bundle 'tpope/vim-endwise'
 " Javascript support
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'pangloss/vim-javascript'
 
 call vundle#end()          
 filetype plugin indent on 
