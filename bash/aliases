@@ -9,6 +9,9 @@ alias cdgolden="cd /projects/goldenmanager.com"
 alias reload_bash="source ~/.bashrc"
 alias grep="grep --color"
 
+# --- git
+alias gcb="git checkout -b"
+
 # RAILS RELATED ALIASES
 
 alias start-redis="sudo redis-server /usr/local/etc/redis.conf"
