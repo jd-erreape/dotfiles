@@ -12,6 +12,7 @@ Bundle 'vim-scripts/ZoomWin'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
+Bundle 'airblade/vim-gitgutter'
 " Javascript support
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kchmck/vim-coffee-script'
