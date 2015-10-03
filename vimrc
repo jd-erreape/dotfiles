@@ -63,7 +63,10 @@ map <Up> <Nop>
 map <Down> <Nop>
 
 " Tree mode for netrw by default
-let g:netrw_liststyle=3
+" let g:netrw_liststyle=3
+
+" Start NERDTree on startup
+autocmd VimEnter * NERDTree
 
 "##############################################################################                                                                         
 "" Easier split navigation                                                                                                                               
