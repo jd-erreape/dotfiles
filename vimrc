@@ -66,7 +66,15 @@ map <Down> <Nop>
 " let g:netrw_liststyle=3
 
 " Start NERDTree on startup
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
+
+" NERDTree shortcut
+function OpenNERDTree()
+  execute ":NERDTree"
+endfunction
+command -nargs=0 OpenNERDTree :call OpenNERDTree()
+
+nmap <ESC>t :OpenNERDTree<CR>
 
 "##############################################################################                                                                         
 "" Easier split navigation                                                                                                                               
