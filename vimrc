@@ -70,12 +70,14 @@ map <Down> <Nop>
 
 " NERDTree shortcut
 function OpenNERDTree()
-  execute ":NERDTree"
+  execute ":NERDTreeToggle"
 endfunction
 command -nargs=0 OpenNERDTree :call OpenNERDTree()
 
 nmap <ESC>t :OpenNERDTree<CR>
 
+" Display cursorline
+set cursorline
 "##############################################################################                                                                         
 "" Easier split navigation                                                                                                                               
 "##############################################################################                                                                         
