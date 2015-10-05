@@ -13,6 +13,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'mileszs/ack.vim'
 " Javascript support
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kchmck/vim-coffee-script'
