@@ -26,7 +26,7 @@ set t_Co=256
 syntax on
 syntax enable
 
-colorscheme railscasts
+colorscheme railscasts2
 
 set encoding=utf-8
 filetype plugin indent on
@@ -36,6 +36,9 @@ let mapleader = ","
 
 " Do not break long lines
 set nowrap
+
+" Split on right vertical
+set splitright
 
 " Highlight statusbar of active pane
 hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
