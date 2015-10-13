@@ -39,6 +39,10 @@ set nowrap
 
 " Split on right vertical
 set splitright
+set splitbelow
+
+" Select all text
+map <C-A> ggVG
 
 " Highlight statusbar of active pane
 hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
@@ -82,17 +86,16 @@ nmap <ESC>t :OpenNERDTree<CR>
 
 " Display cursorline
 set cursorline
-"##############################################################################                                                                         
-"" Easier split navigation                                                                                                                               
-"##############################################################################                                                                         
-"
-"" Use ctrl-[hjkl] to select the active split!
-" nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
-" nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
-" nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
-" nmap <silent> <c-l> :wincmd l<CR>
 
 "##############################################################################                                                                         
+" Easier window navigation
+"##############################################################################                                                                         
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 "" Toggle relative or absolute line numbers
 "##############################################################################                                                                         
 
