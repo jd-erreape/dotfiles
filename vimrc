@@ -19,6 +19,8 @@ Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
+" Elixir support (It is necessary to comment last option on one of plugin files to avoid errors)
+Bundle 'elixir-lang/vim-elixir' 
 
 call vundle#end()          
 filetype plugin indent on 
