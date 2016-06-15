@@ -157,3 +157,7 @@ set backspace=indent,eol,start
 
 " Create swap files in ~/tmp dir
 set backupdir=~/tmp
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
