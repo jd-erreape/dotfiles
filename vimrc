@@ -15,6 +15,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'ekalinin/Dockerfile.vim'
+Bundle 'vim-airline/vim-airline'
 " Javascript support
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kchmck/vim-coffee-script'
@@ -68,10 +69,10 @@ endif
 " -------------- END -------------------
 
 " Disable arrow keys
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+" map <Left> <Nop>
+" map <Right> <Nop>
+" map <Up> <Nop>
+" map <Down> <Nop>
 
 " Tree mode for netrw by default
 " let g:netrw_liststyle=3
