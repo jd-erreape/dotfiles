@@ -20,6 +20,8 @@ Bundle 'vim-airline/vim-airline'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
+Bundle 'othree/javascript-libraries-syntax.vim'
 " Elixir support (It is necessary to comment last option on one of plugin files to avoid errors)
 Bundle 'elixir-lang/vim-elixir' 
 
@@ -189,3 +191,8 @@ map <leader>H              :wincmd H<cr>
 map <leader>K              :wincmd K<cr>
 map <leader>L              :wincmd L<cr>
 map <leader>J              :wincmd J<cr>
+
+" JSX syntax highliting on js files
+let g:jsx_ext_required = 0
+let g:used_javascript_libs = 'underscore,backbone,jquery,react,ramda,jasmine'
+
