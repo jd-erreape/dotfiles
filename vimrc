@@ -22,6 +22,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
 Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'AndrewRadev/vim-eco'
 " Elixir support (It is necessary to comment last option on one of plugin files to avoid errors)
 Bundle 'elixir-lang/vim-elixir' 
 
@@ -39,6 +40,9 @@ filetype plugin indent on
 
 " Set the leader
 let mapleader = ","
+
+" Highlight ack results
+let g:ackhighlight = 1
 
 " Do not break long lines
 set nowrap
@@ -195,4 +199,14 @@ map <leader>J              :wincmd J<cr>
 " JSX syntax highliting on js files
 let g:jsx_ext_required = 0
 let g:used_javascript_libs = 'underscore,backbone,jquery,react,ramda,jasmine'
+
+" Trim whitespaces
+fun! TrimWhitespace()
+  let l:save = winsaveview()
+  %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+
+command! TrimWhitespace call TrimWhitespace()
+:noremap <Leader>w :call TrimWhitespace()<CR>
 
