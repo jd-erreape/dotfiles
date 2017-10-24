@@ -11,6 +11,7 @@ alias grep="grep --color"
 
 # --- git
 alias gcb="git checkout -b"
+alias gpo="git symbolic-ref --short -q HEAD | xargs git push origin"
 
 # RAILS RELATED ALIASES
 
