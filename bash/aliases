@@ -40,3 +40,6 @@ stop_docker(){
 
 # --- foreman start
 alias fs="foreman start"
+
+# --- Docker aliases
+alias dcup="docker-compose up"
