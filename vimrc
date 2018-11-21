@@ -51,6 +51,9 @@ set nowrap
 set splitright
 set splitbelow
 
+" Disable bells
+set vb t_vb=.
+
 " Select all text
 map <C-A> ggVG
 
