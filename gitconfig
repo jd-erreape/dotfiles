@@ -1,3 +1,10 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+	ui = auto
+  pager = true
 [alias]
   co = checkout
   ci = commit
@@ -10,3 +17,13 @@
 [user]
 	name = jd-erreape
 	email = juandediosherrero@gmail.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[core]
+	editor = /usr/bin/vim
+[merge]
+[diff]
