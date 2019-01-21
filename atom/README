@@ -1,0 +1,11 @@
+CONFIG FILE
+
+~/.atom/config.cson
+
+INSTALLED PACKAGES
+
+- Backup list
+apm list --installed --bare > ~/.atom/package.list
+
+- Restore list
+apm install --packages-file ~/.atom/package.list

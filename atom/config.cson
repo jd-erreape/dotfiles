@@ -1,0 +1,72 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "51c09fb7-7b4b-4508-aa91-2f673a75aa7d"
+  "atom-fuzzy-grep":
+    grepCommandString: '''
+      ack -i --nocolor --nogroup --column
+      
+    '''
+  autosave:
+    enabled: true
+  core:
+    allowPendingPaneItems: false
+    closeEmptyWindows: false
+    customFileTypes:
+      "source.yaml": [
+        "yml.example"
+      ]
+    disabledPackages: [
+      "linter-jshint"
+      "linter"
+      "atom-beautify"
+      "minimap"
+      "minimap-highlight-selected"
+      "react"
+    ]
+    packagesWithKeymapsDisabled: []
+    projectHome: "/projects"
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "gruvbox"
+    ]
+    titleBar: "custom"
+  editor:
+    fontFamily: "inconsolata"
+    showIndentGuide: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "5519c52a-11b9-144c-59b2-baac6448091e"
+  "fuzzy-finder":
+    ignoredNames: [
+      "**/node_modules/*"
+      "**/vendor/*"
+    ]
+  "git-blame":
+    customCommitUrlTemplateString: "https://git.vcint.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  "linter-eslint": {}
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "seti-syntax":
+    dynamicColor: false
+  "seti-ui":
+    compactView: true
+    themeColor: "Orange"
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "status-bar": {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
