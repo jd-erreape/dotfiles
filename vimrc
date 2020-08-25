@@ -144,6 +144,7 @@ set showbreak=+++
 set textwidth=100	
 set showmatch	
 set visualbell
+set t_vb=
  
 set hlsearch	
 set smartcase	
